@@ -6,48 +6,104 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".NavigationActivity"
-    tools:showIn="@layout/app_bar_navigation"
-    tools:ignore="PrivateResource">
+    tools:ignore="PrivateResource"
+    tools:showIn="@layout/app_bar_navigation">
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"/>-->
-
-    <FrameLayout
+    <!-- top section -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment" />
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="#001a69"
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="10dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pemasukan" />
+
+            <!-- this block supposed to display action bar
+                 like viewing calendar, stats, and print-->
+            <TextView
+                android:id="@+id/view_cal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_kalender" />
+
+            <TextView
+                android:id="@+id/nav_stat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_statistik_putih" />
+
+            <TextView
+                android:id="@+id/nav_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_cetak" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!-- need action bar for month before -->
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="JULY 2018" />
+            <!-- need action bar for month after -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- fragment section -->
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- bottom section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="42dp"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:paddingTop="10dp"
+        android:background="#001a69"
+        android:orientation="horizontal"
         android:paddingLeft="17dp"
         android:paddingRight="17dp"
-        android:background="#001a69">
+        android:paddingTop="10dp">
+
         <TextView
-            android:textColor="#277bdb"
             android:id="@+id/textView"
-            android:textSize="17dp"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="SALDOO" />
-        <TextView
+            android:text="SALDOO"
             android:textColor="#277bdb"
+            android:textSize="17dp" />
+
+        <TextView
             android:id="@+id/textView2"
-            android:textSize="17dp"
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            android:text="Rp. 00.000" />
+            android:layout_weight="0.5"
+            android:text="Rp. 00.000"
+            android:textColor="#277bdb"
+            android:textSize="17dp" />
     </LinearLayout>
 
 </RelativeLayout>
