@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
+import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -56,7 +57,20 @@ public class NavigationActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        //untuk bagian yang atas (appbar)
         getMenuInflater().inflate(R.menu.navigation, menu);
+        MenuInflater mi = getMenuInflater();
+
+        Toolbar toolbar;
+//        setSupportActionBar(toolbar);
+//        toolbar.inflateMenu(R.menu.navigation);
+//        toolbar.inflateMenu(R.menu.activity_navigation_drawer);
+
+        //untuk bagian yang bawah (toolbar)
+        toolbar = (Toolbar) findViewById(R.id.top_bar);
+        setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.fragment_bar_name);
+
         return true;
     }
 
@@ -78,10 +92,11 @@ public class NavigationActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Toolbar tb ;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_report) {
+        if (id == R.id.nav_stat) {
 
         } else if (id == R.id.nav_zis) {
 
@@ -90,13 +105,20 @@ public class NavigationActivity extends AppCompatActivity
             pemasukanPengeluaran p = new pemasukanPengeluaran();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, p).commit();
+            tb = (Toolbar) findViewById(R.id.top_bar);
+            setSupportActionBar(tb);
+            getSupportActionBar().setTitle("Income/Outcome");
 
         } else if (id == R.id.nav_hutang) {
             setTitle("Hutang / Piutang");
             hutangPiutang hp = new hutangPiutang();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, hp).commit();
-
+            tb = (Toolbar) findViewById(R.id.top_bar);
+            setSupportActionBar(tb);
+            getSupportActionBar().setTitle("Loan");
+        } else {
+            id = R.id.nav_pemasukan;
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
