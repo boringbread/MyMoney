@@ -40,8 +40,13 @@ public class NavigationActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.navigation);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        onNavigationItemSelected(navigationView.getMenu().getItem(0).getSubMenu().getItem(0));
+        navigationView.setCheckedItem(R.id.nav_pemasukan);
     }
 
     @Override
@@ -58,18 +63,17 @@ public class NavigationActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         //untuk bagian yang atas (appbar)
-        getMenuInflater().inflate(R.menu.navigation, menu);
-        MenuInflater mi = getMenuInflater();
 
-        Toolbar toolbar;
+
+//        Toolbar toolbar;
 //        setSupportActionBar(toolbar);
 //        toolbar.inflateMenu(R.menu.navigation);
 //        toolbar.inflateMenu(R.menu.activity_navigation_drawer);
 
         //untuk bagian yang bawah (toolbar)
-        toolbar = (Toolbar) findViewById(R.id.top_bar);
-        setSupportActionBar(toolbar);
-        toolbar.inflateMenu(R.menu.fragment_bar_name);
+//        toolbar = (Toolbar) findViewById(R.id.top_bar);
+//        setSupportActionBar(toolbar);
+//        toolbar.inflateMenu(R.menu.fragment_bar_name);
 
         return true;
     }
@@ -93,32 +97,40 @@ public class NavigationActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Toolbar tb ;
+        tb = (Toolbar) findViewById(R.id.top_bar);
+        setSupportActionBar(tb);
+        FloatingActionButton fab = findViewById(R.id.fab);
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_stat) {
+            Statistik s = new Statistik();
+            FragmentManager fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fragment, s).commit();
+            getSupportActionBar().setTitle("Statistik");
+            fab.hide();
 
         } else if (id == R.id.nav_zis) {
+            ZIS z = new ZIS();
+            FragmentManager fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fragment, z).commit();
+            getSupportActionBar().setTitle("ZIS");
+            fab.hide();
 
         } else if (id == R.id.nav_pemasukan) {
-            setTitle("Pemasukan / Pengeluaran");
-            pemasukanPengeluaran p = new pemasukanPengeluaran();
+            PemasukanPengeluaran p = new PemasukanPengeluaran();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, p).commit();
-            tb = (Toolbar) findViewById(R.id.top_bar);
-            setSupportActionBar(tb);
             getSupportActionBar().setTitle("Income/Outcome");
+            fab.show();
 
         } else if (id == R.id.nav_hutang) {
-            setTitle("Hutang / Piutang");
-            hutangPiutang hp = new hutangPiutang();
+            HutangPiutang hp = new HutangPiutang();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, hp).commit();
-            tb = (Toolbar) findViewById(R.id.top_bar);
-            setSupportActionBar(tb);
             getSupportActionBar().setTitle("Loan");
-        } else {
-            id = R.id.nav_pemasukan;
+            fab.hide();
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

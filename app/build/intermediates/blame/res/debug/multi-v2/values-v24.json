@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\MyMoney\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\ASUS\\Documents\\GitHub\\MyMoney\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0-alpha3.aar\\114075c241ce6f255d9fd7bf109e4ffa\\res\\values-v24\\values-v24.xml",

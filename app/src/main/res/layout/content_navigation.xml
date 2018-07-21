@@ -16,24 +16,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-    </android.support.v7.widget.Toolbar>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <!-- need action bar for month before -->
-        <TextView
-            android:id="@+id/textMonth"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="JULY 2018" />
-        <!-- need action bar for month after -->
-    </LinearLayout>
-
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <!-- fragment section -->
     <FrameLayout
@@ -41,34 +24,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- bottom section -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
-        android:background="#001a69"
-        android:orientation="horizontal"
-        android:paddingLeft="17dp"
-        android:paddingRight="17dp"
-        android:paddingTop="10dp">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SALDOO"
-            android:textColor="#277bdb"
-            android:textSize="17dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="Rp. 00.000"
-            android:textColor="#277bdb"
-            android:textSize="17dp" />
-    </LinearLayout>
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-#Thu Jul 19 23:28:34 ICT 2018
-base.0=C\:\\Users\\ASUS\\AndroidStudioProjects\\MyMoney\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Sat Jul 21 19:55:46 ICT 2018
+base.0=C\:\\Users\\ASUS\\Documents\\GitHub\\MyMoney\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex
