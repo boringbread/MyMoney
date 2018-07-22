@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NavigationActivity">
+
+    <item
+        android:id="@+id/action_month_back"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_navigate_before_white"
+        app:showAsAction="always"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_select_month"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="Month" />
+
+    <item
+        android:id="@+id/action_month_next"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_navigate_next_white"
+        app:showAsAction="always"
+        android:title="" />
+
+</menu>

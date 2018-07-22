@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="My Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pemasukan"
+                    android:icon="@drawable/ic_dollar"
+                    android:title="Pemasukan / Pengeluaran" />
+                <item
+                    android:id="@+id/nav_hutang"
+                    android:icon="@drawable/ic_hutang"
+                    android:title="Hutang / Piutang" />
+                <item
+                    android:id="@+id/nav_both"
+                    android:icon="@drawable/ic_layers"
+                    android:title="Both" />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stat"
+            android:icon="@drawable/ic_statistik"
+            android:title="Statistik" />
+        <item
+            android:id="@+id/nav_zis"
+            android:icon="@drawable/ic_emoji_senyum"
+            android:title="ZIS" />
+    </group>
+
+</menu>
