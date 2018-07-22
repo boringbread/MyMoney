@@ -9,14 +9,7 @@
     tools:ignore="PrivateResource"
     tools:showIn="@layout/app_bar_navigation">
 
-    <!-- top section -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
 
     <!-- fragment section -->
     <FrameLayout

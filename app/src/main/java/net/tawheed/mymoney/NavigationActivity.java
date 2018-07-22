@@ -64,8 +64,8 @@ public class NavigationActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         //untuk bagian yang atas (appbar)
 
-
-//        Toolbar toolbar;
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.top_bar2);
+//        toolbar.inflateMenu(R.menu.month_bar);
 //        setSupportActionBar(toolbar);
 //        toolbar.inflateMenu(R.menu.navigation);
 //        toolbar.inflateMenu(R.menu.activity_navigation_drawer);
@@ -129,8 +129,14 @@ public class NavigationActivity extends AppCompatActivity
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, hp).commit();
             getSupportActionBar().setTitle("Loan");
-            fab.hide();
+            fab.show();
 
+        } else if (id == R.id.nav_both) {
+            Both b = new Both();
+            FragmentManager fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fragment, b).commit();
+            getSupportActionBar().setTitle("Both");
+            fab.show();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

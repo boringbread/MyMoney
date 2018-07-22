@@ -10,12 +10,13 @@
         android:icon="@drawable/ic_navigate_before_white"
         app:showAsAction="always"
         android:title="" />
+
     <item
-        android:id="@+id/nav_stat"
+        android:id="@+id/action_select_month"
         android:orderInCategory="1"
-        android:text="Bulan Tahun"
         app:showAsAction="always"
-        android:title="" />
+        android:title="Month" />
+
     <item
         android:id="@+id/action_month_next"
         android:orderInCategory="1"
