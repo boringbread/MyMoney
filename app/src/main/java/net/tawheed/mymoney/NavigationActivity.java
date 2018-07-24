@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 public class NavigationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -21,6 +22,8 @@ public class NavigationActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -65,8 +68,10 @@ public class NavigationActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         //untuk bagian yang atas (appbar)
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.top_bar2);
-//        toolbar.inflateMenu(R.menu.month_bar);
+        Toolbar tb = findViewById(R.id.mm_choose_bar);
+        setSupportActionBar(tb);
+        getSupportActionBar().setTitle("");
+        tb.inflateMenu(R.menu.month_bar);
 //        setSupportActionBar(toolbar);
 //        toolbar.inflateMenu(R.menu.navigation);
 //        toolbar.inflateMenu(R.menu.activity_navigation_drawer);
@@ -97,7 +102,7 @@ public class NavigationActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Toolbar tb ;
+        Toolbar tb;
         tb = (Toolbar) findViewById(R.id.top_bar);
         setSupportActionBar(tb);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -105,38 +110,48 @@ public class NavigationActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_stat) {
+            getSupportActionBar().setTitle("Statistik");
+            tb = findViewById(R.id.mm_choose_bar);
+            setSupportActionBar(tb);
             Statistik s = new Statistik();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, s).commit();
-            getSupportActionBar().setTitle("Statistik");
             fab.hide();
 
         } else if (id == R.id.nav_zis) {
+            getSupportActionBar().setTitle("ZIS");
+            tb = findViewById(R.id.mm_choose_bar);
+            setSupportActionBar(tb);
             ZIS z = new ZIS();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, z).commit();
-            getSupportActionBar().setTitle("ZIS");
             fab.hide();
 
         } else if (id == R.id.nav_pemasukan) {
+            getSupportActionBar().setTitle("Income/Outcome");
+            tb = findViewById(R.id.mm_choose_bar);
+            setSupportActionBar(tb);
             PemasukanPengeluaran p = new PemasukanPengeluaran();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, p).commit();
-            getSupportActionBar().setTitle("Income/Outcome");
             fab.show();
 
         } else if (id == R.id.nav_hutang) {
+            getSupportActionBar().setTitle("Loan");
+            tb = findViewById(R.id.mm_choose_bar);
+            setSupportActionBar(tb);
             HutangPiutang hp = new HutangPiutang();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, hp).commit();
-            getSupportActionBar().setTitle("Loan");
             fab.show();
 
         } else if (id == R.id.nav_both) {
+            getSupportActionBar().setTitle("Both");
+            tb = findViewById(R.id.mm_choose_bar);
+            setSupportActionBar(tb);
             Both b = new Both();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, b).commit();
-            getSupportActionBar().setTitle("Both");
             fab.show();
         }
 

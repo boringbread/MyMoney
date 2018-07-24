@@ -8,16 +8,6 @@
     tools:context=".Statistik">
 
     <!-- TODO: Update blank fragment layout -->
-    <!-- top section -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/top_bar2_d"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="#313c82"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <!-- mid section -->
     <ScrollView
@@ -30,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="7dp">
-            <!-- Pilih bulan -->
+            <!-- Pilih tipe statistik -->
             <Spinner
                 android:id="@+id/spinner_stat_type"
                 android:layout_width="wrap_content"
@@ -39,8 +29,8 @@
             <!-- Munculkan grafik -->
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/bar1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
 
             <!-- Informasi bulan dan tahun -->
             <LinearLayout
@@ -71,6 +61,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp">
                 <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/stat_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
@@ -87,6 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/stat_out"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
@@ -103,6 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/stat_lo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
@@ -119,6 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/stat_cl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
@@ -134,7 +128,10 @@
 
 
             <!-- grafik yang setengah lingkaran -->
-
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
 
         </LinearLayout>
 

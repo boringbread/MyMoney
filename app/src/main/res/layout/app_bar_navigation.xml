@@ -25,6 +25,15 @@
             android:layout_height="?attr/actionBarSize"
             android:background="#283593"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <!-- month chooser -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mm_choose_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#313c82"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
     </android.support.design.widget.AppBarLayout>
 

@@ -9,19 +9,22 @@
         android:orderInCategory="1"
         android:icon="@drawable/ic_navigate_before_white"
         app:showAsAction="always"
-        android:title="" />
+        android:title=""
+        android:gravity="center"/>
 
     <item
         android:id="@+id/action_select_month"
         android:orderInCategory="1"
         app:showAsAction="always"
-        android:title="Month" />
+        android:title="Month"
+        android:gravity="center"/>
 
     <item
         android:id="@+id/action_month_next"
         android:orderInCategory="1"
         android:icon="@drawable/ic_navigate_next_white"
         app:showAsAction="always"
-        android:title="" />
+        android:title=""
+        android:gravity="center"/>
 
 </menu>

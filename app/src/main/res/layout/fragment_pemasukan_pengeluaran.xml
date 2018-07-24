@@ -8,30 +8,19 @@
     tools:context=".PemasukanPengeluaran">
 
     <!-- TODO: Update blank fragment layout -->
-    <!-- top section -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/top_bar2_a"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="#313c82"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
-
     <!-- mid section -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8">
+        android:layout_weight="9">
 
     </ScrollView>
 
     <!-- bottom section -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="40dp"
+
         android:background="#001a69"
         android:orientation="horizontal"
         android:paddingLeft="17dp"
