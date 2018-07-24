@@ -6,7 +6,12 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="tab">\u0009</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="claim_t">Claim \u0009 :</string>
+    <string name="loan_t">Loan \u0009 :</string>
+    <string name="outcome_t">Outcome \u0009 :</string>
+    <string name="income_t">Income \u0009 :</string>
 </resources>
