@@ -47,6 +47,15 @@ public class NavigationActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.inflateMenu(R.menu.navigation);
 
+        toolbar = findViewById(R.id.top_bar);
+//        setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.fragment_bar_name);
+
+        toolbar = findViewById(R.id.mm_choose_bar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+        toolbar.inflateMenu(R.menu.month_bar);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         onNavigationItemSelected(navigationView.getMenu().getItem(0).getSubMenu().getItem(0));
@@ -68,7 +77,12 @@ public class NavigationActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         //untuk bagian yang atas (appbar)
 
-        Toolbar tb = findViewById(R.id.mm_choose_bar);
+        Toolbar tb;
+//        tb = findViewById(R.id.top_bar);
+//        setSupportActionBar(tb);
+//        tb.inflateMenu(R.menu.fragment_bar_name);
+
+        tb = findViewById(R.id.mm_choose_bar);
         setSupportActionBar(tb);
         getSupportActionBar().setTitle("");
         tb.inflateMenu(R.menu.month_bar);
@@ -111,6 +125,7 @@ public class NavigationActivity extends AppCompatActivity
 
         if (id == R.id.nav_stat) {
             getSupportActionBar().setTitle("Statistik");
+            tb.getMenu().setGroupVisible(R.id.grup1, false);
             tb = findViewById(R.id.mm_choose_bar);
             setSupportActionBar(tb);
             Statistik s = new Statistik();
@@ -120,6 +135,7 @@ public class NavigationActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_zis) {
             getSupportActionBar().setTitle("ZIS");
+            tb.getMenu().setGroupVisible(R.id.grup1, false);
             tb = findViewById(R.id.mm_choose_bar);
             setSupportActionBar(tb);
             ZIS z = new ZIS();
@@ -129,6 +145,7 @@ public class NavigationActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_pemasukan) {
             getSupportActionBar().setTitle("Income/Outcome");
+            tb.getMenu().setGroupVisible(R.id.grup1, true);
             tb = findViewById(R.id.mm_choose_bar);
             setSupportActionBar(tb);
             PemasukanPengeluaran p = new PemasukanPengeluaran();
@@ -138,6 +155,7 @@ public class NavigationActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_hutang) {
             getSupportActionBar().setTitle("Loan");
+            tb.getMenu().setGroupVisible(R.id.grup1, true);
             tb = findViewById(R.id.mm_choose_bar);
             setSupportActionBar(tb);
             HutangPiutang hp = new HutangPiutang();
@@ -147,12 +165,13 @@ public class NavigationActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_both) {
             getSupportActionBar().setTitle("Both");
+            tb.getMenu().setGroupVisible(R.id.grup1, true);
             tb = findViewById(R.id.mm_choose_bar);
             setSupportActionBar(tb);
             Both b = new Both();
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fragment, b).commit();
-            fab.show();
+            fab.hide();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

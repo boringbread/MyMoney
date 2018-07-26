@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".NavigationActivity">
+    <group android:id="@+id/grup1">
+        <item
+            android:id="@+id/action_change_toCalendar"
+            android:icon="@drawable/ic_kalender"
+            android:orderInCategory="1"
+            android:title=""
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_stat"
+            android:icon="@drawable/ic_statistik_putih"
+            android:orderInCategory="1"
+            android:title=""
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_print"
+            android:icon="@drawable/ic_cetak"
+            android:orderInCategory="1"
+            android:title=""
+            app:showAsAction="ifRoom" />
+    </group>
 
-    <item
-        android:id="@+id/action_change_toCalendar"
-        android:orderInCategory="1"
-        android:icon="@drawable/ic_kalender"
-        app:showAsAction="ifRoom"
-        android:title="" />
-    <item
-        android:id="@+id/nav_stat"
-        android:orderInCategory="1"
-        android:icon="@drawable/ic_statistik_putih"
-        app:showAsAction="ifRoom"
-        android:title="" />
-    <item
-        android:id="@+id/action_print"
-        android:orderInCategory="1"
-        android:icon="@drawable/ic_cetak"
-        app:showAsAction="ifRoom"
-        android:title="" />
 
 </menu>
