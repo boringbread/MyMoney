@@ -1,19 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\ad3498dcc9e2f8d3a0e9a991c4139660\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\644c41f69941002e864c6dd7fabf9671\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\261e562cca5da20b1418668f76e168ed\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\c4b3bf1aca4394ea1661d3809760c255\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\bd798b992a751fd43d1342d70efc6445\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\7f3adb14ba15b95c3f95749dbe7375ea\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\9affe58bf43b94faf5171f617362a53f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\96e14c32c9a0c4d48c5291b901d81d77\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\cbdd03554bb38b36d274c087309518cc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\114075c241ce6f255d9fd7bf109e4ffa\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\ebc6628e2f617cdce74ebefb864f02a8\AndroidManifest.xml:17:1-22:12
@@ -36,25 +36,25 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ASUS\.gradle\cache
 MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\993db549ca39c0acf46b32496dfe7c01\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\7c62ab4b51a63528862358cdd683dea2\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\661c9ab569d81e28cdcec9ed5a62846d\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:5:5-33:19
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\ad3498dcc9e2f8d3a0e9a991c4139660\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\ad3498dcc9e2f8d3a0e9a991c4139660\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\261e562cca5da20b1418668f76e168ed\AndroidManifest.xml:9:5-20
@@ -66,21 +66,21 @@ MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\ASU
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\57a70bd481e762314ed1c768f6476c00\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:9:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:7:9-41
 	android:roundIcon
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
 		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:12:9-40
 activity#net.tawheed.mymoney.NavigationActivity
-ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:13:9-22:20
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:13:9-24:20
 	android:label
 		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:15:13-45
 	android:theme
@@ -97,6 +97,24 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:20:27-74
+meta-data#android.app.searchable
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:22:13-23:53
+	android:resource
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:23:17-51
+	android:name
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:22:24-61
+activity#net.tawheed.mymoney.SettingsActivity
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:25:9-29:20
+	android:label
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:27:13-60
+	android:name
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:26:13-45
+activity#net.tawheed.mymoney.Pop_Print
+ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:30:9-32:20
+	android:theme
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml:30:19-44
 uses-sdk
 INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ASUS\Documents\GitHub\MyMoney\app\src\main\AndroidManifest.xml
@@ -109,18 +127,18 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\AS
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\261e562cca5da20b1418668f76e168ed\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\c4b3bf1aca4394ea1661d3809760c255\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\c4b3bf1aca4394ea1661d3809760c255\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\bd798b992a751fd43d1342d70efc6445\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\bd798b992a751fd43d1342d70efc6445\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\945feb99a2f67957195f754904d357de\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\7f3adb14ba15b95c3f95749dbe7375ea\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\7f3adb14ba15b95c3f95749dbe7375ea\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\9affe58bf43b94faf5171f617362a53f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\9affe58bf43b94faf5171f617362a53f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\96e14c32c9a0c4d48c5291b901d81d77\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\96e14c32c9a0c4d48c5291b901d81d77\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\1b21fc6e8111e723c20e00c820540a4c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\cbdd03554bb38b36d274c087309518cc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\cbdd03554bb38b36d274c087309518cc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\114075c241ce6f255d9fd7bf109e4ffa\AndroidManifest.xml:20:5-44

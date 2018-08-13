@@ -1,10 +1,12 @@
 package net.tawheed.mymoney;
 
+import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
-import android.view.MenuInflater;
+import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,9 +17,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.DatePicker;
+
+import java.util.Calendar;
 
 public class NavigationActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, SearchView.OnQueryTextListener, SearchView.OnCloseListener {
 
 
     @Override
@@ -60,6 +65,7 @@ public class NavigationActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         onNavigationItemSelected(navigationView.getMenu().getItem(0).getSubMenu().getItem(0));
         navigationView.setCheckedItem(R.id.nav_pemasukan);
+
     }
 
     @Override
@@ -72,28 +78,22 @@ public class NavigationActivity extends AppCompatActivity
         }
     }
 
+    private void setItemsVisibility(Menu menu, MenuItem exception, boolean visible) {
+        for (int i = 0; i < menu.size(); ++i) {
+            MenuItem item = menu.getItem(i);
+            if (item != exception) item.setVisible(visible);
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         //untuk bagian yang atas (appbar)
-
         Toolbar tb;
-//        tb = findViewById(R.id.top_bar);
-//        setSupportActionBar(tb);
-//        tb.inflateMenu(R.menu.fragment_bar_name);
-
         tb = findViewById(R.id.mm_choose_bar);
         setSupportActionBar(tb);
         getSupportActionBar().setTitle("");
         tb.inflateMenu(R.menu.month_bar);
-//        setSupportActionBar(toolbar);
-//        toolbar.inflateMenu(R.menu.navigation);
-//        toolbar.inflateMenu(R.menu.activity_navigation_drawer);
-
-        //untuk bagian yang bawah (toolbar)
-//        toolbar = (Toolbar) findViewById(R.id.top_bar);
-//        setSupportActionBar(toolbar);
-//        toolbar.inflateMenu(R.menu.fragment_bar_name);
 
         return true;
     }
@@ -107,6 +107,35 @@ public class NavigationActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            //buka activity setting
+            startActivityForResult(new Intent(NavigationActivity.this, SettingsActivity.class), 0);
+            return true;
+
+        } else if (id == R.id.action_jump_toDate) {
+            //buka jendela pencarian tangggal
+            showDateDialog();
+            return true;
+
+        } else if (id == R.id.action_search) {
+            //buka jendela pencarian
+
+            return true;
+
+        } else if (id == R.id.action_print) {
+            //buka popup
+
+            startActivity(new Intent(NavigationActivity.this, Pop_Print.class));
+            return true;
+
+        } else if (id == R.id.action_stat) {
+            //buka fragment statistik
+            NavigationView navigationView = findViewById(R.id.nav_view);
+            onNavigationItemSelected(navigationView.getMenu().getItem(1));
+            navigationView.setCheckedItem(R.id.nav_stat);
+            return true;
+
+        } else if (id == R.id.action_change_toCalendar) {
+            //ganti ke mode kalender
             return true;
         }
 
@@ -177,5 +206,40 @@ public class NavigationActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void showDateDialog() {
+        Calendar newCalendar = Calendar.getInstance();
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                Calendar newDate = Calendar.getInstance();
+                newDate.set(year, monthOfYear, dayOfMonth);
+            }
+
+        }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
+
+        datePickerDialog.show();
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
+
+    @Override
+    public boolean onClose() {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String s) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String s) {
+        return false;
     }
 }

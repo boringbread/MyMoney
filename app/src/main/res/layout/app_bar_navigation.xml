@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:layout_gravity="bottom|center"
-        android:layout_margin="45dp"
+        android:layout_margin="80dp"
         android:scaleType="center"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_add_black"
